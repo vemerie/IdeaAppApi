@@ -2,7 +2,7 @@ import { Controller, Get, Post, Put, Delete, Body, Param, UsePipes, ValidationPi
 import { IdeaService } from './idea.service';
 import { IdeaDTO } from './idea.dto';
 
-@Controller('idea')
+@Controller('api/idea')
 export class IdeaController {
     private logger = new Logger('IdeaController')
     constructor(private ideaService:IdeaService){
